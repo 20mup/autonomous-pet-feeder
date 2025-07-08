@@ -3,7 +3,7 @@
 A smart, voice-activated feeding system built to automate mealtime for pets. Combines hardware and a React Native app for remote control and status monitoring — ensuring your pet is fed even when you’re away.
 
 
-![Feeder Prototype](/images/pet_feeder_banner.png)
+![Feeder Prototype](/images/dog_feeder.jpg)
 
 ---
 
