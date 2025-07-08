@@ -28,7 +28,7 @@ It lets users feed pets manually, on a schedule, or using voice commands — eve
 
 | Dispensing | Confirmation |
 |------------|--------------|
-| <img src="images/food_check.png" width="200"/> <img src="images/food_dispensed.png" width="200"/> | <img src="images/food_checked.png" width="200"/> <img src="images/siri_fed.png" width="200"/> |
+| <img src="images/food_check.png" width="200"/> <img src="images/food_checked.png" width="200"/> | <img src="images/food_dispensed.png" width="200"/> <img src="images/siri_fed.png" width="200"/> |
 
 ---
 
