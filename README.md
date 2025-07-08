@@ -1,68 +1,80 @@
-# 🐶 Autonomous Pet Feeder
+# 🦖 Jurassic Rescue Robot – BIG WHEELS
 
-A smart pet feeder system that combines hardware and software to automate feeding schedules for your furry friends. Powered by an Arduino-controlled dispenser and a custom-built mobile app, the system allows users to add pet profiles, set feeding times, and check food storage levels in real-time — all through a clean React Native interface.
+An award-winning autonomous + manually controlled robot designed for a Jurassic Park-themed rescue mission. Built as part of the MREN 303 course, the robot was tasked with pressing a button to open a gate, retrieving a baby dinosaur (doll), and optionally herding other dinosaurs into a cage — all while meeting strict mechanical and electrical constraints.
 
 <div align="center">
-  <img src="images/feeder_preview.png" alt="Autonomous Pet Feeder Demo" width="500"/>
+  <img src="images/CompleteFrontView.jpg" alt="Jurassic Rescue Robot Front View" width="500"/>
 </div>
+
+---
+
+## 🏆 Awards
+- 🥇 People's Choice Award – *MREN 303: Tronic Park 2024*
 
 ---
 
 ## 🚀 Features
 
-- 📱 **Mobile App (React Native + Expo)**  
-  Add pets, edit their details, view profiles, and set custom feeding times.
+- 🎮 **Dual Operation Modes**
+  - Autonomous mode to navigate, locate, and press gate-opening button
+  - Manual control using a gamepad for precise retrieval of the dinosaur
 
-- 🍽 **Automated Food Dispensing**  
-  Uses an Arduino and servo motor to dispense food on schedule via Ably-powered messages.
+- 🔩 **Custom Mechanism Design**
+  - Vertical clamp & plow mechanism for reliable object capture and movement
+  - Laser-cut chassis, custom servos, and minimal degrees of freedom
 
-- 🧠 **Real-Time Messaging with Ably**  
-  Ensures immediate communication between app and hardware for instant food delivery and status updates.
-
-- 📦 **Food Storage Check**  
-  Check current food levels and get alerts via the app interface.
+- 📐 **Design Constraints**
+  - Max 3 servos
+  - Raspberry Pi Pico microcontroller
+  - No prefabricated chassis or wheels allowed
+  - Lightweight design with recycled + custom-cut materials
 
 ---
 
 ## 🛠 Tech Stack
 
-### Hardware
-- Arduino UNO
-- Servo Motor
-- Real-time communication via Bluetooth (or wired serial)
-- Power supply + custom enclosure
-
-### Mobile App
-- React Native with Expo
-- Ably Realtime API
-- AsyncStorage for persistent pet data
-- Custom UI using images and fonts
+- Raspberry Pi Pico (MicroPython & C++)
+- Servo Motors (limited to 3)
+- Ultrasonic Sensors (for distance detection)
+- Gamepad via UDP (for remote control)
+- Laser-cut MDF & acrylic parts
+- Hand-soldered circuits + wiring
 
 ---
 
-## 📂 Project Structure
+## 📂 File Structure
 
 ```
-autonomous-pet-feeder/
-├── hardware/                # Arduino servo control
-│   └── DOG_FEEDER_FINAL.ino
-├── mobile-app/              # Full mobile frontend
-│   ├── App.js
-│   ├── screens/
-│   ├── services/
-│   ├── assets/
-│   ├── package.json
-│   └── app.json
-├── images/                  # Demo screenshots
-├── videos/                  # (Optional) demo video
+jurassic-rescue-robot/
+├── code/
+│   ├── Completed_Code.ino
+│   ├── auto.ino
+│   ├── line_following.ino
+│   ├── ultrasound_test.ino
+│   ├── Motor_driver.ino
+│   ├── PicoUDPGamepadRead_BatteryRead.ino
+│   └── PicoUDPGamepadReadGameModes.ino
+├── images/
+│   ├── CompleteFrontView.jpg
+│   ├── CompleteBackView.jpg
+│   └── CompleteIsoView.jpg
 ├── README.md
 └── .gitignore
 ```
 
 ---
 
-## 📷 Screenshots
+## 🖼️ Gallery
 
-| Home Screen             | Main Menu |
-|------------------------|-----------|
-| *Add screenshots here* | *...*     |
+| Front View | Back View | Isometric View |
+|------------|-----------|----------------|
+| ![](images/CompleteFrontView.jpg) | ![](images/CompleteBackView.jpg) | ![](images/CompleteIsoView.jpg) |
+
+---
+
+## 🙌 Credits
+
+Team Members:
+- Mousa Pirzada – App development, mechanism control, code integration
+- [Add collaborators if any]
+
