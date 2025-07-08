@@ -1,7 +1,7 @@
 # 🐶 Autonomous Pet Feeder
 
-A smart IoT-powered pet feeder developed for the **MREN 328: Signals and Systems** course at Queen’s University.  
-It features mobile app control, real-time database communication, and Siri voice command integration for seamless pet care automation.
+A smart, voice-activated feeding system built to automate mealtime for pets. Combines hardware and a React Native app for remote control and status monitoring — ensuring your pet is fed even when you’re away.
+
 
 ![Feeder Prototype](/images/pet_feeder_banner.png)
 
