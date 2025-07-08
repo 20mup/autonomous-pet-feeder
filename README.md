@@ -14,15 +14,21 @@ It lets users feed pets manually, on a schedule, or using voice commands — eve
 
 ---
 
+## 🎥 Demo
+
+> ▶️ [Click to watch the full demo.](demo/dog_feeder_demo.mov)
+
+---
+
 ## 📸 Gallery
 
-| iOS App UI | Feeder Hardware | Siri Voice Trigger |
-|------------|------------------|---------------------|
-| <img src="/assets/images/pet-feeder/main_menu.png" width="220"/> | <img src="/assets/images/pet-feeder/dog_feeder.jpg" width="220"/> | <img src="/assets/images/pet-feeder/siri_fed.png" width="220"/> |
+| Device | App Screens |
+|--------|--------------|
+| <img src="images/dog_feeder.jpg" width="300"/> | <img src="images/main_menu.png" width="200"/> <img src="images/view_pets.png" width="200"/> <img src="images/pet_profile.png" width="200"/> |
 
-| Pet Profile | Food Storage View | Dispense Confirmation |
-|-------------|--------------------|-------------------------|
-| <img src="/assets/images/pet-feeder/pet_profile.png" width="220"/> | <img src="/assets/images/pet-feeder/food_check.png" width="220"/> | <img src="/assets/images/pet-feeder/food_dispensed.png" width="220"/> |
+| Dispensing | Confirmation |
+|------------|--------------|
+| <img src="images/food_check.png" width="200"/> <img src="images/food_dispensed.png" width="200"/> | <img src="images/food_checked.png" width="200"/> <img src="images/siri_fed.png" width="200"/> |
 
 ---
 
@@ -61,23 +67,25 @@ It lets users feed pets manually, on a schedule, or using voice commands — eve
 
 ## 💻 Tech Stack
 
-| Area             | Tools & Technologies                     |
-|------------------|-------------------------------------------|
-| Mobile App       | React Native, Swift (iOS Shortcuts)       |
-| Backend          | Firebase Realtime Database                |
-| Microcontroller  | Arduino Uno, Stepper Motor, Push Button   |
-| Communication    | Siri Shortcuts + Firebase Event Listener  |
+| Area             | Tools / Tech                         |
+|------------------|--------------------------------------|
+| Hardware         | Raspberry Pi Pico, Ultrasonic Sensor, Servo |
+| Firmware         | Arduino C++                          |
+| App Development  | React Native, Expo                   |
+| Voice Feedback   | Pre-recorded prompts, UI toggles     |
+| Communication    | USB Serial / Potential WiFi control (future) |
 
 ---
 
-## 🛠️ Files & Structure
+## 📁 Project Structure
 
 ```bash
-AutonomousPetFeeder/
-├── app/                  # React Native frontend code
-├── arduino/              # Arduino sketches for feeder motor
-├── assets/               # App images and media
-├── docs/                 # Engineering case study
+autonomous-pet-feeder/
+├── app/               # React Native app (Expo)
+├── hardware-code/     # Arduino code for sensor + motor control
+├── images/            # Feeder photos and UI screenshots
+├── demo/              # Project demo video
+├── docs/              # Engineering case study & notes
 └── README.md
 ```
 
@@ -99,9 +107,9 @@ AutonomousPetFeeder/
 
 ## 📖 Learn More
 
-- [📄 Engineering Case Study](docs/pet-feeder-case-study.md)
-- [📱 UI Screenshots](/assets/images/pet-feeder/)
-- [🌐 GitHub Repo](https://github.com/20mup/AutonomousPetFeeder)
+- [📄 Engineering Case Study](docs/autonomous-pet-feeder-case-study.md)
+- [📱 UI Screenshots](/assets/images/welcome_page.png/)
+- [🌐 GitHub Repo](https://github.com/20mup/autonomous-pet-feeder)
 
 ---
 
